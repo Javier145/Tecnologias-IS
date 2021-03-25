@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente SOAP</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js%22%3E"></script>
+</head>
+<body>
+    <!--<form action ="http://localhost:8080/ws/calculadora" method = "POST"> -->
+    <form action ="http://localhost:8080/ws/calculadora">
+        <label form="">Valor A:</label><input type = "text" id = "a"><br>
+        <label form="">Valor B:</label><input type = "text" id = "b"><br>
+        <label form="">Resultado:</label><input type = "text" id = "r"><br>
+        <input type = "submit" value="Enviar" onclick="soap()">
+    </form>
+    <script src="soap.js"></script>
+</body>
+</html>
