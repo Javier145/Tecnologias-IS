@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cliente SOAP</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <nav>
+            <a href="añadir.html">Añadir</a>
+            <a href="buscar.html">Mostrar</a>
+            <a href="editar.html">Editar</a>
+            <a href="buscarPrecio.html">Buscar Precio</a>
+            <a href="eliminar.html">Eliminar</a>
+            <div class="animation start-home"></div>
+        </nav>
+
+        <div id="añadir" class="registroAlimentos">
+            
+                <h1>MODIFICAR ALIMENTOS</h1>
+                <form>
+                    <p><label for="id">Id: </label><input type="text" id="id" class="redondeado"><br></p>
+                    <p><label for="nombre">Nombre Alimento: </label><input type="text" id="nombre" class="redondeado"><br></p>
+                    <p><label for="descripcion">Descripcion: </label></p>
+                    <textarea cols="40" rows="3" type="text" id="descripcion" class="redondeado"></textarea>
+                    <p><label for="precio">Precio: </label><input type="text" id="precio" class="redondeado"><br></p>
+                    <p><label for="cantidad_existente">Cantidad Existente: </label><input type="text" id="cantidad_existente" class="redondeado"><br></p>
+                    <p><label for="fecha_elaboracion">Fecha Elaboracion: </label><input type="text" id="fecha_elaboracion" class="redondeado"><br></p>
+                    <p><label for="fecha_caducidad">Fecha Caducidad: </label><input type="text" id="fecha_caducidad" class="redondeado"><br></p>
+                    <p><label for="categoria">Categoria de Aliemento: </label><input type="text" id="categoria" class="redondeado"><br></p>
+                    <label for="r">resultado: </label><input type="text" id="r" readonly><br>
+                    <button type="button" value="enviar" onclick="soap()">Modificar</button>
+                </form>
+                <script src="soapModificar.js"></script>
+        </div>
+    </body>
+
+</html>
